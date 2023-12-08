@@ -1,8 +1,9 @@
 import { reducerCases } from "./Constants";
 
 export const initialState ={
-  token:null,
-  playlists:[],
+  token: null,
+  playlists: [],
+  userInfo: null,
 };
 
 const reducer= (state, action) => {
@@ -17,6 +18,12 @@ const reducer= (state, action) => {
       return {
         ...state,
         playlists:action.playlists,
+      }
+    }
+    case reducerCases.SET_USER: {
+      return {
+        ...state,
+        userInfo:action.userInfo,
       }
     }
     default :return state;

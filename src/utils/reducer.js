@@ -4,6 +4,7 @@ export const initialState ={
   token: null,
   playlists: [],
   userInfo: null,
+  currentlyPlaying: null,
 };
 
 const reducer= (state, action) => {
@@ -11,19 +12,25 @@ const reducer= (state, action) => {
     case reducerCases.SET_TOKEN: {
       return {
         ...state,
-        token:action.token,
+        token: action.token,
       }
     }
     case reducerCases.SET_PLAYLISTS: {
       return {
         ...state,
-        playlists:action.playlists,
+        playlists: action.playlists,
       }
     }
     case reducerCases.SET_USER: {
       return {
         ...state,
-        userInfo:action.userInfo,
+        userInfo: action.userInfo,
+      }
+    }
+    case reducerCases.SET_PLAYING: {
+      return {
+        ...state,
+        currentlyPlaying: action.currentlyPlaying,
       }
     }
     default :return state;

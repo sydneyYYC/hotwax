@@ -7,7 +7,7 @@ export default function Navbar() {
   return <div>Navbar
     <div>Icon</div>
     <div>
-     Hello { userInfo.userName }
+     Hello { userInfo?.userName }
     </div>
   </div>
 }

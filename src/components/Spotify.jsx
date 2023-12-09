@@ -5,6 +5,7 @@ import Playlists from "./Playlists";
 import axios from "axios";
 import { reducerCases } from "../utils/Constants";
 import Navbar from "./NavBar";
+import CurrentTrack from "./CurrentTrack";
 
 export default function Spotify() {
   const [{token}, dispatch]= useStateProvider();
@@ -28,8 +29,8 @@ export default function Spotify() {
     <div className="m-4">Spotify</div>
     <Navbar />
     <Playlists />
-    <Footer></Footer>
+    <CurrentTrack />
     </main>
 }
 
-// video paused at 103:06
+

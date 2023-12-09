@@ -1,5 +1,8 @@
 import React from "react";
+import CurrentTrack from "./CurrentTrack";
 
 export default function Footer() {
-  return <div>Footer</div>
+  return <div>
+    <CurrentTrack />
+    Footer</div>
 }

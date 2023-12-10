@@ -14,7 +14,7 @@ export default function Login() {
   return (
     <div>
     <img src="/logo.svg" alt="a placeholder" />
-    <button onClick={handleClick}>Connect</button>
+    <button onClick={handleClick} className="bg-slate-200">Connect</button>
     </div>
   )
 }

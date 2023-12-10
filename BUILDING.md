@@ -13,3 +13,10 @@ REACT_APP_AUTH_KEY = process.env and then using template  literals `${app}` to i
 what does the reducer do?
 how does axios work?
 dispatch? type vs dispatch action
+
+
+# stretch goals
+
+add local storage so you dont have to log in every time
+
+track how many times you have listened to each album

@@ -22,7 +22,7 @@ export default function CurrentTrack () {
         id: item.id,
         name: item.name,
         artists: item.artists.map((artist)=>artist.name),
-        image: item.album.images[2].url,
+        image: item.album.images[1].url,
       };
       dispatch({ type:reducerCases.SET_PLAYING, currentlyPlaying });
     }

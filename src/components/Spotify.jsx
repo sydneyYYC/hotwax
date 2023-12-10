@@ -5,7 +5,7 @@ import Playlists from "./Playlists";
 import axios from "axios";
 import { reducerCases } from "../utils/Constants";
 import Navbar from "./NavBar";
-import CurrentTrack from "./CurrentTrack";
+
 
 export default function Spotify() {
   const [{token}, dispatch]= useStateProvider();
@@ -24,12 +24,12 @@ export default function Spotify() {
     };
     getUserInfo();
   }, [dispatch, token])
-  // this is where the page is compiled
+  // this is where the page is compiled when users are logged in 
   return <main className="max-w-screen min-h-screen bg-green-100">
     <div className="m-4">Spotify</div>
     <Navbar />
     <Playlists />
-    <CurrentTrack />
+    <Footer />
     </main>
 }
 

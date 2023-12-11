@@ -50,7 +50,7 @@ if(response.data !== ""){
   };
   return <div className="flex items-end p-2 max-h-max">
     <div onClick={()=> changeTrack("previous")} className="p-4 text-xl hover:bg-myred mx-4 rounded-lg">PREV</div>
-    <div className="state">{playerState ? <button className=" bg-white w-[40px] h-auto text-xl" onClick={changeState}><img src="./assets/pause.svg" alt="pause"/>PAUSE</button>
+    <div className="state">{playerState ? <button className=" w-[40px] h-auto text-xl" onClick={changeState}><img src="./assets/pause.png" alt="pause"/>PAUSE</button>
      : 
      <button onClick={changeState} className="w-[40px] h-auto text-xl rounded-lg"><img src="./assets/play.svg" alt="play"/>PLAY</button>}</div>
     <div onClick={()=> changeTrack("next")} className="p-4 text-xl hover:bg-myred mx-4 rounded-lg">NEXT</div>

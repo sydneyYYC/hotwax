@@ -25,12 +25,12 @@ export default function Playlists(){
     dispatch({ type:reducerCases.SET_PLAYLIST_ID, selectedPlaylistId });
   };
 
-  return <div>Playlists
-    <div>
+  return <div className="text-white flex flex-col mt-2 justify-center items-center">
+    <div className="">
       <ul> {
         playlists.map(({name, id})=> {
           return (
-            <li key={id} onClick={()=>changeCurrentPlaylist(id)}>{name}</li>
+            <li className="border-[2px] border-darkred mb-2 text-lg" key={id} onClick={()=>changeCurrentPlaylist(id)}>{name}</li>
           )
         })
         }

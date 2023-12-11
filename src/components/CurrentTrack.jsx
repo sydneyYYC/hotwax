@@ -22,7 +22,7 @@ export default function CurrentTrack () {
         id: item.id,
         name: item.name,
         artists: item.artists.map((artist)=>artist.name),
-        image: item.album.images[1].url,
+        image: item.album.images[2].url,
       };
       dispatch({ type:reducerCases.SET_PLAYING, currentlyPlaying });
     }
@@ -30,14 +30,14 @@ export default function CurrentTrack () {
   getCurrentTrack();
   }, [token, dispatch]);
   console.log("this is", currentlyPlaying);
-  return <div> currently playing
+  return <div>
     {currentlyPlaying && (
       <div className="current track">
-        <div>
+        <div className="ml-2 w-[80px] h-auto">
           <img src={currentlyPlaying.image} alt="album cover art"/>
         </div>
         <div className="track info">
-          <h4>{currentlyPlaying.name}</h4>
+          <h4 className="min-w-max">{currentlyPlaying.name}</h4>
           <h6>{currentlyPlaying.artists.join(", ")}</h6>
         </div>
       </div>

@@ -25,11 +25,21 @@ export default function Spotify() {
     getUserInfo();
   }, [dispatch, token])
   // this is where the page is compiled when users are logged in 
-  return <main className="max-w-screen min-h-screen bg-green-100">
-    <div className="m-4">Spotify</div>
-    <Navbar />
-    <Playlists />
-    <Footer />
+  return <main className="max-w-screen min-h-screen bg-baseblack">
+    <div className =" grid grid-col-12 grid-row-3">
+      <div className="col-start-1 col-span-3 z-10 row-start-1">
+        <Navbar />
+      </div>
+      <div className="min-w-screen col-start-1 col-span-full justify-self-center row-start-1 mx-4">
+        <img src="./assets/console.png" alt="a record player"/>
+      </div>
+      <div className="col-start-1 row-start-1 justify-self-end row-start-1 z-10">
+      <Playlists />
+      </div>
+    </div>
+      <div className="m-auto">
+      <Footer />
+      </div>
     </main>
 }
 

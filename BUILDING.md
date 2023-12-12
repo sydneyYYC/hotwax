@@ -13,7 +13,7 @@ REACT_APP_AUTH_KEY = process.env and then using template  literals `${app}` to i
 what does the reducer do?
 how does axios work?
 dispatch? type vs dispatch action
-
+usestate provider carries data somehow between pages? is this the 'hook'?
 
 # stretch goals
 

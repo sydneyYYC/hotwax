@@ -36,10 +36,10 @@ export default function Spotify() {
       <div className="col-start-1 row-start-1 justify-self-end row-start-1 z-10">
       <Playlists />
       </div>
-    </div>
       <div className="m-auto">
       <Footer />
       </div>
+    </div>
     </main>
 }
 

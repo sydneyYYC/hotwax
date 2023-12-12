@@ -30,7 +30,7 @@ export default function Playlists(){
       <ul> {
         playlists.map(({name, id})=> {
           return (
-            <li className="border-[2px] border-darkred mb-2 text-lg" key={id} onClick={()=>changeCurrentPlaylist(id)}>{name}</li>
+            <li className="border-[2px] border-darkred mb-2 text-sm mr-4" key={id} onClick={()=>changeCurrentPlaylist(id)}>{name}</li>
           )
         })
         }

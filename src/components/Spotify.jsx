@@ -31,7 +31,7 @@ export default function Spotify() {
         <Navbar />
       </div>
       <div className="min-w-screen col-start-1 col-span-full justify-self-center row-start-1 mx-4">
-        <img src="./assets/console.png" alt="a record player"/>
+        <img src="./assets/console.png" alt="a record player" />
       </div>
       <div className="col-start-1 row-start-1 justify-self-end row-start-1 z-10">
       <Playlists />

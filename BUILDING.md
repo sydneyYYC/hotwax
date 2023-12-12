@@ -20,3 +20,7 @@ usestate provider carries data somehow between pages? is this the 'hook'?
 add local storage so you dont have to log in every time
 
 track how many times you have listened to each album
+
+add a record spin animation
+
+add a needle drop

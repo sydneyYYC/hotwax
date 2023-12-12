@@ -4,6 +4,7 @@ import { useStateProvider } from './utils/StateProvider';
 import Spotify from './components/Spotify';
 import { reducerCases } from './utils/Constants';
 
+
 function App() {
   const [{ token }, dispatch ] = useStateProvider();
   useEffect(() => {
@@ -20,5 +21,3 @@ function App() {
   } 
 
 export default App;
-
-// left off at 26:50 in https://www.youtube.com/watch?v=ajVcLGEw8Xw

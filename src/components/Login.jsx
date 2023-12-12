@@ -12,9 +12,14 @@ export default function Login() {
     window.location.href = `${apiUrl}?client_id=${clientId}&redirect_uri=${redirectUri}&scope=${scope.join(" ")}&response_type=token&show_dialog=true`;
    };
   return (
-    <div>
-    <img src="/logo.svg" alt="a placeholder" />
-    <button onClick={handleClick} className="bg-slate-200">Connect</button>
+    <div className=" flex flex-col max-w-screen min-h-screen bg-baseblack bg-gradient-to-t from-baseblack to-darkred">
+        <div className="flex flex-col">
+        <div className=" justify-self-center grid grid-cols-2 grid-rows-1 m-auto self-center p-6 max-w-max rounded-md justify-items-center">
+        <h1 className=" self-center z-10 col-span-full row-start-1 font-bold text-white tracking-widest text-4xl p-2 bg-baseblack">HOT WAX</h1>
+        <img className="col-span-full row-start-1"src="/assets/record.svg" alt="a placeholder" />
+        </div>
+        <button onClick={handleClick} className=" m-4 p-4 bg-myred  rounded-md text-white font-semibold max-w-max self-center">Connect to Spotify</button>
+      </div>
     </div>
   )
 }

@@ -4,6 +4,9 @@ Music Player through Spotify
 Log into your Spotify account and enjoy a groovier way to listen to music 
 (you must have a premium account to log in).
 
+Not currently mobile friendly (Work in Progress). 
+
+Please log into your spotify account to access music library - this is simply a player currently. 
 ## [LiveSite](https://hotwax.netlify.app/)
 
 
